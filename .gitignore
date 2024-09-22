@@ -1,0 +1,6 @@
+vendor
+
+.devbox
+devbox.lock
+
+.env

@@ -1,0 +1,13 @@
+with-expecter: True
+inpackage: False
+mockname: "Mock{{.InterfaceName}}"
+outpkg: "mocks"
+filename: "mock_{{.InterfaceName}}.go"
+dir: "{{.InterfaceDir}}/mocks"
+all: True
+recursive: True
+packages:
+  ask/pkg/command:
+  ask/pkg/adapter:
+  ask/pkg/listener:
+  ask/pkg/logger: 

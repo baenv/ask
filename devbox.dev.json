@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
+  "packages": [
+    "go@latest",
+    "colima@latest",
+    "docker@latest",
+    "docker-compose@latest",
+    "git@latest",
+    "vim@latest",
+    "qemu@latest",
+    "postgresql@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "install": "go get ./...",
+      "build": "go build -o bot cmd/main.go",
+      "start": "./bot"
+    }
+  }
+}

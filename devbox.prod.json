@@ -1,0 +1,19 @@
+{
+  "packages": [
+      "go@1.23.1"
+  ],
+  "env": {
+      "GOPATH": "$HOME/go/",
+      "PATH": "$PATH:$HOME/go/bin"
+  },
+  "shell": {
+      "init_hook": [
+          "export \"GOROOT=$(go env GOROOT)\""
+      ],
+      "scripts": {
+          "install": "go get ./...",
+          "build": "go build -o bot cmd/main.go",
+          "start": "./bot"
+      }
+  }
+}
