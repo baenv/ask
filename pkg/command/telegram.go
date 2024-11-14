@@ -2,15 +2,15 @@
 package command
 
 import (
-	"ask/pkg/adapter"
-	"ask/pkg/command/ai"
-	"ask/pkg/command/ask"
-	"ask/pkg/command/ls"
-	"ask/pkg/command/reg"
-	"ask/pkg/command/start"
-	"ask/pkg/config"
-	"ask/pkg/logger"
-	"ask/pkg/repo"
+	"sum/pkg/adapter"
+	"sum/pkg/command/ai"
+	"sum/pkg/command/ls"
+	"sum/pkg/command/reg"
+	"sum/pkg/command/start"
+	"sum/pkg/command/sum"
+	"sum/pkg/config"
+	"sum/pkg/logger"
+	"sum/pkg/repo"
 
 	"github.com/go-telegram/bot"
 )
@@ -22,7 +22,7 @@ type telegram struct {
 	ls    *ls.Telegram
 	ai    *ai.Telegram
 	start *start.Telegram
-	ask   *ask.Telegram
+	sum   *sum.Telegram
 }
 
 // NewTelegram creates a new Telegram command handler.
@@ -33,7 +33,7 @@ func NewTelegram(repo repo.Repository, t *bot.Bot, cfg config.Config, a adapter.
 		ls:    ls.NewTelegram(repo, logger),
 		ai:    ai.NewTelegram(repo, cfg, a, logger),
 		start: start.NewTelegram(repo, logger),
-		ask:   ask.NewTelegram(cfg, a, logger),
+		sum:   sum.NewTelegram(cfg, a, logger),
 	}
 }
 
@@ -64,7 +64,7 @@ func (t *telegram) RegisterStart() {
 	t.bot.RegisterHandler(bot.HandlerTypeMessageText, "/help", bot.MatchTypePrefix, t.start.Handle)
 }
 
-// RegisterAsk registers the ask command with the Telegram bot.
-func (t *telegram) RegisterAsk() {
-	t.bot.RegisterHandler(bot.HandlerTypeMessageText, "/ask", bot.MatchTypePrefix, t.ask.Handle)
+// RegisterSum registers the sum command with the Telegram bot.
+func (t *telegram) RegisterSum() {
+	t.bot.RegisterHandler(bot.HandlerTypeMessageText, "/sum", bot.MatchTypePrefix, t.sum.Handle)
 }

@@ -1,9 +1,9 @@
 package listener
 
 import (
-	"ask/pkg/command"
-	"ask/pkg/config"
-	"ask/pkg/logger"
+	"sum/pkg/command"
+	"sum/pkg/config"
+	"sum/pkg/logger"
 
 	"gorm.io/gorm"
 

@@ -1,7 +1,7 @@
 package userconfig
 
 import (
-	"ask/pkg/models"
+	"sum/pkg/models"
 )
 
 func (c userConfig) SaveAPIKey(id string, apiKey string) error {

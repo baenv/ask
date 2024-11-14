@@ -1,10 +1,10 @@
 package command
 
 import (
-	"ask/pkg/adapter"
-	"ask/pkg/command/reg"
-	"ask/pkg/logger"
-	"ask/pkg/repo"
+	"sum/pkg/adapter"
+	"sum/pkg/command/reg"
+	"sum/pkg/logger"
+	"sum/pkg/repo"
 
 	"github.com/bwmarrin/discordgo"
 )
@@ -43,5 +43,5 @@ func (d *discord) RegisterAi() {}
 // RegisterStart registers the start command with the Discord API
 func (d *discord) RegisterStart() {}
 
-// RegisterAsk registers the ask command with the Discord API
-func (d *discord) RegisterAsk() {}
+// RegisterSum registers the sum command with the Discord API
+func (d *discord) RegisterSum() {}

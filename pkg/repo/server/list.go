@@ -1,6 +1,6 @@
 package server
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 // ListByUserID
 func (s server) ListByUserID(userID int64) ([]models.Server, error) {

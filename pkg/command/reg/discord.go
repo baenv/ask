@@ -1,12 +1,12 @@
 package reg
 
 import (
-	"ask/pkg/logger"
-	"ask/pkg/models"
-	"ask/pkg/repo"
 	"fmt"
 	"net/url"
 	"strings"
+	"sum/pkg/logger"
+	"sum/pkg/models"
+	"sum/pkg/repo"
 
 	"github.com/bwmarrin/discordgo"
 )

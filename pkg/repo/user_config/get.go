@@ -1,6 +1,6 @@
 package userconfig
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 func (c userConfig) GetByID(id string) (models.UserAgentConfig, error) {
 	var config models.UserAgentConfig

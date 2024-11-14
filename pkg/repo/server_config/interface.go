@@ -1,6 +1,6 @@
 package serverconfig
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 type IServerConfig interface {
 	ListPendingByUserID(userID string) ([]models.ServerAdminConfig, error)

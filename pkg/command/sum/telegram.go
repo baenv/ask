@@ -1,13 +1,13 @@
-package ask
+package sum
 
 import (
-	"ask/pkg/adapter"
-	"ask/pkg/config"
-	"ask/pkg/logger"
 	"context"
 	"errors"
 	"fmt"
 	"strings"
+	"sum/pkg/adapter"
+	"sum/pkg/config"
+	"sum/pkg/logger"
 	"time"
 
 	"github.com/go-telegram/bot"
@@ -28,7 +28,7 @@ func NewTelegram(config config.Config, adapter adapter.IAdapter, logger logger.L
 	}
 }
 
-// Handle executes the /ask command and sends the response to the user.
+// Handle executes the /sum command and sends the response to the user.
 // It also logs any errors that occur while executing the command.
 func (t *Telegram) Handle(ctx context.Context, b *bot.Bot, update *telegramMod.Update) {
 	parts := strings.Fields(update.Message.Text)

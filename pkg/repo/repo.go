@@ -1,11 +1,11 @@
 package repo
 
 import (
-	"ask/pkg/repo/server"
-	serverconfig "ask/pkg/repo/server_config"
-	"ask/pkg/repo/user"
-	userconfig "ask/pkg/repo/user_config"
 	"fmt"
+	"sum/pkg/repo/server"
+	serverconfig "sum/pkg/repo/server_config"
+	"sum/pkg/repo/user"
+	userconfig "sum/pkg/repo/user_config"
 
 	"gorm.io/gorm"
 )

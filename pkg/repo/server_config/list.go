@@ -1,6 +1,6 @@
 package serverconfig
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 func (c serverConfig) ListPendingByUserID(userID string) ([]models.ServerAdminConfig, error) {
 	var configs []models.ServerAdminConfig

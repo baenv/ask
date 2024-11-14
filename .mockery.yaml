@@ -7,7 +7,7 @@ dir: "{{.InterfaceDir}}/mocks"
 all: True
 recursive: True
 packages:
-  ask/pkg/command:
-  ask/pkg/adapter:
-  ask/pkg/listener:
-  ask/pkg/logger: 
+  sum/pkg/command:
+  sum/pkg/adapter:
+  sum/pkg/listener:
+  sum/pkg/logger: 

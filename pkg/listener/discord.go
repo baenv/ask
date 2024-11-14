@@ -1,7 +1,7 @@
 package listener
 
 import (
-	"ask/pkg/command"
+	"sum/pkg/command"
 
 	"github.com/bwmarrin/discordgo"
 )

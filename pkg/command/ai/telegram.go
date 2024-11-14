@@ -1,16 +1,16 @@
 package ai
 
 import (
-	"ask/pkg/adapter"
-	"ask/pkg/config"
-	"ask/pkg/logger"
-	"ask/pkg/models"
-	"ask/pkg/repo"
-	"ask/pkg/utils/encryptutils"
 	"context"
 	"errors"
 	"fmt"
 	"strings"
+	"sum/pkg/adapter"
+	"sum/pkg/config"
+	"sum/pkg/logger"
+	"sum/pkg/models"
+	"sum/pkg/repo"
+	"sum/pkg/utils/encryptutils"
 
 	"github.com/go-telegram/bot"
 	telegramMod "github.com/go-telegram/bot/models"

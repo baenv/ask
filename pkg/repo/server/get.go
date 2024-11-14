@@ -1,6 +1,6 @@
 package server
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 func (s server) GetByServerID(serverID int64) (models.Server, error) {
 	var server models.Server

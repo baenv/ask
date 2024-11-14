@@ -1,6 +1,6 @@
 package userconfig
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 func (c userConfig) ListPendingByUserID(userID string) ([]models.UserAgentConfig, error) {
 	var configs []models.UserAgentConfig

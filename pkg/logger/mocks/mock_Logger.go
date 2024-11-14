@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	logger "ask/pkg/logger"
+	logger "sum/pkg/logger"
 
 	mock "github.com/stretchr/testify/mock"
 )

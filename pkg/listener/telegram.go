@@ -2,8 +2,8 @@
 package listener
 
 import (
-	"ask/pkg/command"
 	"context"
+	"sum/pkg/command"
 
 	"github.com/go-telegram/bot"
 )
@@ -39,5 +39,5 @@ func (t *telegram) Register() {
 	// t.command.RegisterLs()
 	// t.command.RegisterAi()
 	// t.command.RegisterStart()
-	t.command.RegisterAsk()
+	t.command.RegisterSum()
 }

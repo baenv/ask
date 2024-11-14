@@ -3,8 +3,8 @@
 package adapter
 
 import (
-	"ask/pkg/adapter/dify"
-	"ask/pkg/config"
+	"sum/pkg/adapter/dify"
+	"sum/pkg/config"
 )
 
 // IAdapter defines the interface for adapters.

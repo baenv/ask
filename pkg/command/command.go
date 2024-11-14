@@ -2,10 +2,10 @@
 package command
 
 import (
-	"ask/pkg/adapter"
-	"ask/pkg/config"
-	"ask/pkg/logger"
-	"ask/pkg/repo"
+	"sum/pkg/adapter"
+	"sum/pkg/config"
+	"sum/pkg/logger"
+	"sum/pkg/repo"
 
 	"gorm.io/gorm"
 

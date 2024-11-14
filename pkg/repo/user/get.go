@@ -1,6 +1,6 @@
 package user
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 func (u *user) GetByPlatformID(userID, platform string) (models.User, error) {
 	var user models.User

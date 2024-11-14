@@ -1,6 +1,6 @@
 package user
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 type IUser interface {
 	Create(user models.User) (models.User, error)

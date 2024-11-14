@@ -1,6 +1,6 @@
 package server
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 type IServer interface {
 	Create(server models.Server) (models.Server, error)

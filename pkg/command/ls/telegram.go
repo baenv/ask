@@ -1,13 +1,13 @@
 package ls
 
 import (
-	"ask/pkg/logger"
-	"ask/pkg/models"
-	"ask/pkg/repo"
 	"context"
 	"fmt"
 	"strconv"
 	"strings"
+	"sum/pkg/logger"
+	"sum/pkg/models"
+	"sum/pkg/repo"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"github.com/go-telegram/bot"

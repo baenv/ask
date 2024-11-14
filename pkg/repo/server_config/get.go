@@ -1,6 +1,6 @@
 package serverconfig
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 func (c serverConfig) GetByID(id string) (models.ServerAdminConfig, error) {
 	var config models.ServerAdminConfig

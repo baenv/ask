@@ -1,7 +1,7 @@
 package server
 
 import (
-	"ask/pkg/models"
+	"sum/pkg/models"
 
 	"gorm.io/gorm/clause"
 )

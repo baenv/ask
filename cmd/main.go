@@ -8,9 +8,9 @@ import (
 	"syscall"
 	"time"
 
-	"ask/pkg/config"
-	"ask/pkg/listener"
-	"ask/pkg/logger"
+	"sum/pkg/config"
+	"sum/pkg/listener"
+	"sum/pkg/logger"
 
 	"github.com/bwmarrin/discordgo"
 	"github.com/go-telegram/bot"

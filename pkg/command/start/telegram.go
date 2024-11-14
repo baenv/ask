@@ -1,10 +1,10 @@
 package start
 
 import (
-	"ask/pkg/logger"
-	"ask/pkg/repo"
 	"context"
 	"strings"
+	"sum/pkg/logger"
+	"sum/pkg/repo"
 
 	"github.com/go-telegram/bot"
 	telegramMod "github.com/go-telegram/bot/models"

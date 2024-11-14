@@ -1,6 +1,6 @@
 package serverconfig
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 func (c serverConfig) SaveAPIKey(id string, apiKey string) error {
 	return c.db.Model(&models.ServerAdminConfig{}).Where("id = ?", id).Update("api_key", apiKey).Error

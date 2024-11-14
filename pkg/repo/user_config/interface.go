@@ -1,6 +1,6 @@
 package userconfig
 
-import "ask/pkg/models"
+import "sum/pkg/models"
 
 type IUserConfig interface {
 	ListPendingByUserID(userID string) ([]models.UserAgentConfig, error)

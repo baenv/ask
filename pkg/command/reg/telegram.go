@@ -1,14 +1,14 @@
 package reg
 
 import (
-	"ask/pkg/config"
-	"ask/pkg/logger"
-	"ask/pkg/models"
-	"ask/pkg/repo"
-	"ask/pkg/utils/encryptutils"
 	"context"
 	"fmt"
 	"strings"
+	"sum/pkg/config"
+	"sum/pkg/logger"
+	"sum/pkg/models"
+	"sum/pkg/repo"
+	"sum/pkg/utils/encryptutils"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"github.com/go-telegram/bot"

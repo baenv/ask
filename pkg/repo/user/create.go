@@ -1,7 +1,7 @@
 package user
 
 import (
-	"ask/pkg/models"
+	"sum/pkg/models"
 
 	"gorm.io/gorm/clause"
 )

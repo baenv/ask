@@ -7,5 +7,5 @@ type ICommand interface {
 	RegisterLs()
 	RegisterAi()
 	RegisterStart()
-	RegisterAsk()
+	RegisterSum()
 }

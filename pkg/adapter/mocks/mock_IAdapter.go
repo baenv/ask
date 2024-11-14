@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	dify "ask/pkg/adapter/dify"
+	dify "sum/pkg/adapter/dify"
 
 	mock "github.com/stretchr/testify/mock"
 )
